@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo8k0rb4jk2rg"]
+
+[ext_resource type="ArrayMesh" uid="uid://4ocmctgswijw" path="res://Corridor.obj" id="1_n1fbi"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Corridor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0614299, 49.2143, -712.515)
+mesh = ExtResource("1_n1fbi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Corridor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0614299, 137.961, 841.362)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120.51, 0)
